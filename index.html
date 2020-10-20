@@ -26,9 +26,13 @@
 </style> 
 </head>
 
-<body>
-  <div style="font-family:arial; line-height: 1.5">
+<body id="output" style="font-family:arial; line-height: 1.5">
+  
 <button onclick="topFunction()" id="myBtn" title="Go to top of the page">Top</button>
+
+<button id="dark">Dark mode</button>
+<button id="light">Light mode</button><br><br>
+
 All the lyrics belong to their respective songwriters (Adam R. Young)<br>
 created by OwlCityMP3<br><br>
 <h2>Table of contents:</h2><br>
@@ -9999,10 +10003,10 @@ If we survive we'll stay alive below the ceiling<br>
 
 Of new atmospheres and brighter years that we'll have.<br>
 
-  </div>
+ 
   <br>
   OwlCityMP3 - 2020
-
+</body>
 <script>
 
 var mybutton = document.getElementById("myBtn");
@@ -10021,6 +10025,17 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+document.getElementById("dark").onclick = function(){
+	document.getElementById("output").style.color = 'white';
+	document.body.style.background = '#343434';
+}
+
+document.getElementById("light").onclick = function(){
+	document.getElementById("output").style.color = 'black';
+	document.body.style.background = 'white';
+}
+
 </script>
-</body>
+
 </html>
