@@ -1,4 +1,4 @@
 # owlcitylyrics
 Owl City Lyrics website
 
-https://owlcitylyrics.ml/
+https://owlcitylyrics.netlify.app/
