@@ -59,7 +59,9 @@ a:active{
 <button onclick="topFunction()" id="myBtn" title="Go to top of the page">Top</button>
 
 <button id="dark" style="font-size: 30px;">Dark mode</button>
-<button id="light" style="font-size: 30px;">Light mode</button><br><br>
+<button id="light" style="font-size: 30px;">Light mode</button>
+<button id="meme" style="font-size: 30px;">Meme mode</button>
+<br><br>
 
 All the lyrics belong to their respective songwriters (Adam R. Young)<br>
 created by <a href="https://owlcitylyrics.netlify.app/owlcitymp3">OwlCityMP3</a><br><br>
@@ -12558,6 +12560,11 @@ document.getElementById("dark").onclick = function(){
 document.getElementById("light").onclick = function(){
 	document.getElementById("output").style.color = 'black';
 	document.body.style.background = 'white';
+}
+
+document.getElementById("meme").onclick = function(){
+	document.getElementById("output").style.color = 'black';
+	document.body.style.background = "url('owlcity.jpg')";
 }
 
 </script>
